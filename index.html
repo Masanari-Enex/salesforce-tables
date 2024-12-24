@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>標準オブジェクトとカスタムオブジェクトの比較</title>
+    <title>Salesforceオブジェクト比較</title>
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
+            overflow-x: auto;
+            display: block;
         }
         th, td {
             border: 1px solid #ddd;
-            text-align: left;
             padding: 8px;
+            text-align: left;
         }
         th {
             background-color: #f2f2f2;
         }
         @media (max-width: 600px) {
-            table, thead, tbody, th, td, tr {
+            table {
                 display: block;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
             }
             th, td {
-                width: 100%;
-                box-sizing: border-box;
+                padding: 12px 8px;
             }
         }
     </style>
@@ -53,16 +57,6 @@
                 <td>カスタマイズ性</td>
                 <td>一部の項目やレイアウトは変更可能</td>
                 <td>項目やレイアウトを自由に設計可能</td>
-            </tr>
-            <tr>
-                <td>他機能との連携</td>
-                <td>高い（レポート、ダッシュボードなど）</td>
-                <td>標準機能と連携するための設定が必要</td>
-            </tr>
-            <tr>
-                <td>作成コスト</td>
-                <td>なし。すぐに利用可能</td>
-                <td>設計と作成に計画が必要</td>
             </tr>
         </tbody>
     </table>
