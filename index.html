@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforceオブジェクト比較</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            overflow-x: auto;
-            display: block;
+            font-size: 1rem; /* デフォルト文字サイズ */
         }
         th, td {
             border: 1px solid #ddd;
@@ -19,21 +22,24 @@
         th {
             background-color: #f2f2f2;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 1200px) {
             table {
-                display: block;
-                width: 100%;
-                overflow-x: auto;
-                white-space: nowrap;
+                font-size: 0.9rem; /* 横幅が1200px未満のとき */
             }
-            th, td {
-                padding: 12px 8px;
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.8rem; /* 横幅が768px未満のとき */
+            }
+        }
+        @media (max-width: 480px) {
+            table {
+                font-size: 0.7rem; /* 横幅が480px未満のとき */
             }
         }
     </style>
 </head>
 <body>
-    <h1>標準オブジェクトとカスタムオブジェクトの比較</h1>
     <table>
         <thead>
             <tr>
