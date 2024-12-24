@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>標準オブジェクトとカスタムオブジェクトの比較</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>標準オブジェクトとカスタムオブジェクトの比較</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>項目</th>
+                <th>標準オブジェクト</th>
+                <th>カスタムオブジェクト</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>概要</td>
+                <td>Salesforceにあらかじめ用意された基本オブジェクト</td>
+                <td>自社業務に合わせて作成できるオブジェクト</td>
+            </tr>
+            <tr>
+                <td>使用例</td>
+                <td>取引先、取引先責任者、案件、商品など</td>
+                <td>工事進捗管理、保証申請、プロジェクト管理など</td>
+            </tr>
+            <tr>
+                <td>カスタマイズ性</td>
+                <td>一部の項目やレイアウトは変更可能</td>
+                <td>項目やレイアウトを自由に設計可能</td>
+            </tr>
+            <tr>
+                <td>他機能との連携</td>
+                <td>高い（レポート、ダッシュボードなど）</td>
+                <td>標準機能と連携するための設定が必要</td>
+            </tr>
+            <tr>
+                <td>作成コスト</td>
+                <td>なし。すぐに利用可能</td>
+                <td>設計と作成に計画が必要</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
